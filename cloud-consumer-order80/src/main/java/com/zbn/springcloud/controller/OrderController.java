@@ -23,7 +23,7 @@ public class OrderController {
 
     @GetMapping(value = "/consumer/payment/create")
     public CommonResult create(Payment payment) {
-        log.info("80消费者/consumer/payment/create1");
+        log.info("80消费者/consumer/payment/create");
         return restTemplate.postForObject(URL_8001+"/payment/create",payment,CommonResult.class);
     }
 
